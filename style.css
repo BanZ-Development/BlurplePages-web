@@ -1,0 +1,217 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+--background: rgb(41, 40, 40);
+--primary: #5865f2;
+--font: #23272a;
+--contrast: #ffff;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('font/Poppins/Poppins-Regular.ttf') format('truetype'),
+         url('font/Poppins/Poppins-Black.ttf') format('truetype'),
+         url('font/Poppins/Poppins-BlackItalic.ttf') format('truetype'),
+         url('font/Poppins/Poppins-Bold.ttf') format('truetype'),
+         url('font/Poppins/Poppins-BoldItalic.ttf') format('truetype'),
+         url('font/Poppins/Poppins-ExtraBold.ttf') format('truetype'),
+         url('font/Poppins/Poppins-ExtraBoldItalic.ttf') format('truetype'),
+         url('font/Poppins/Poppins-ExtraLight.ttf') format('truetype'),
+         url('font/Poppins/Poppins-ExtraLightItalic.ttf') format('truetype'),
+         url('font/Poppins/Poppins-Italic.ttf') format('truetype'),
+         url('font/Poppins/Poppins-Light.ttf') format('truetype'),
+         url('font/Poppins/Poppins-LightItalic.ttf') format('truetype'),
+         url('font/Poppins/Poppins-Medium.ttf') format('truetype'),
+         url('font/Poppins/Poppins-MediumItalic.ttf') format('truetype'),
+         url('font/Poppins/Poppins-SemiBold.ttf') format('truetype'),
+         url('font/Poppins/Poppins-SemiBoldItalic.ttf') format('truetype'),
+         url('font/Poppins/Poppins-Thin.ttf') format('truetype'),
+         url('font/Poppins/Poppins-ThinItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('font/Roboto/Roboto-Regular.ttf') format('truetype'),
+         url('/font/Roboto/Roboto-Black.ttf') format('truetype'),
+         url('font/Roboto/Roboto-BlackItalic.ttf') format('truetype'),
+         url('font/Roboto/Roboto-Bold.ttf') format('truetype'),
+         url('font/Roboto/Roboto-BoldItalic.ttf') format('truetype'),
+         url('font/Roboto/Roboto-Italic.ttf') format('truetype'),
+         url('font/Roboto/Roboto-Light.ttf') format('truetype'),
+         url('font/Roboto/Roboto-LightItalic.ttf') format('truetype'),
+         url('font/Roboto/Roboto-Medium.ttf') format('truetype'),
+         url('font/Roboto/Roboto-MediumItalic.ttf') format('truetype'),
+         url('font/Roboto/Roboto-Regular.ttf') format('truetype'),
+         url('font/Roboto/Roboto-Thin.ttf') format('truetype');
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: var(--background);
+    height: 70px;
+}
+
+.logo {
+    width: 150px;
+    position: absolute;
+    color: white;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+.nav-items {
+    float: right;
+    margin-right: 20px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18.5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 70px;
+    display: inline-block;
+    transition: 0.3s ease all;
+}
+
+.nav-item:hover {
+    color: var(--primary);
+}
+
+.sec1-background {
+    background-image: url('images/clouds.png');
+}
+
+.sec1 {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #5865f298;
+    backdrop-filter: blur(10px);
+}
+
+.sec1-h1 {
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.sec1-btn {
+    border: none;
+    height: 35px;
+    width: 100px;
+    background-color: #ffff;
+    border-radius: 4px;
+    cursor: pointer;
+    line-height: 35px;
+    color: var(--font);
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+.sec1-btn:hover {
+    background-color: rgb(214, 209, 209);
+}
+
+.sec2 {
+    display: block;
+    height: 300px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.sec2-center {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 810px;
+    color: var(--font);
+}
+
+.sec2-h1 {
+    font-size: 34.3px;
+}
+
+.sec2-desc {
+    width: 350px;
+    font-size: 22px;
+    color: var(--font)
+}
+
+.sec2-img {
+    border-radius: 6px;
+}
+
+.sec2-left {
+    margin-right: 10px;
+}
+
+.sec2-right {
+    margin-left: 10px;
+}
+
+.sec3 {
+    background-color: #f6f6f6;
+    height: 500px;
+}
+
+.sec3-center {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 810px;
+    padding-top: 110px;
+}
+
+.sec3-right {
+    margin-left: 10px;
+}
+
+.sec3-left {
+    margin-right: 10px;
+}
+
+.sec3-h1 {
+    font-size: 34.3px;
+    color: var(--font);
+}
+
+.sec3-desc {
+    color: var(--font);
+    width: 350px;
+    font-size: 22px;
+}
+
+.sec3-img {
+    border-radius: 6px;
+    width: 420px;
+}
+
+::-webkit-scrollbar {
+    background-color: #23272a;
+}
+
+::-webkit-scrollbar-button {
+    background-color: #23272a;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #30363a;
+    border-radius: 6px;
+}
